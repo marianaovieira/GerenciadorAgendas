@@ -1,0 +1,33 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>ContatosEdit</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+    <ion-list>
+  
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" name="nome" [(ngModel)]="contato.nome"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label stacked>Telefone</ion-label>
+        <ion-input type="text" name="telefone" [(ngModel)]="contato.telefone"></ion-input>
+      </ion-item>
+  
+  <ion-item>
+        <ion-label stacked>EMAIL</ion-label>
+        <ion-input type="text" name="email" [(ngModel)]="contato.email"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+  
+    <button ion-button block (click)="save()">Salvar</button>
+  
+  </ion-content>
