@@ -1,4 +1,4 @@
-e coloca isso import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -15,7 +15,7 @@ export class AgendasProvider {
       this.http.get(this.apiUrl)
       .subscribe(data => {
         resolve(data);
-        console.log('The result is:');
+        console.log('The result is:') ;
         console.log(data);
       }, err => {
         console.log(err);

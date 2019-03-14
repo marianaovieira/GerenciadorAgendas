@@ -14,17 +14,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { ContatosProvider } from '../providers/contatos/contatos';
 import { ContatosEditPage } from '../pages/contatos-edit/contatos-edit';
-import { AgendaProvider } from '../providers/agendas/agendas';
+import { AgendasProvider } from '../providers/agendas/agendas';
 
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 @NgModule({
   declarations: [
-    MyApp,
+    MyApp ,
     AboutPage,
     ContactPage,
     HomePage,
-    ContatosPage,ContatosEditPage,
+    ContatosPage,
+    ContatosEditPage,
     TabsPage
   ],
   imports: [
@@ -38,6 +39,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     AboutPage,
     ContactPage,
     HomePage,
+    ContatosPage,
+    ContatosEditPage,
     TabsPage
   ],
   providers: [

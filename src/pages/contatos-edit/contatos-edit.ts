@@ -16,7 +16,7 @@ export class ContatosEditPage {
       this.contato = new Contato();
 
       if (this.navParams.data.id) {
-        this.convidadosProvider.findById(this.navParams.data.id)
+        this.contatosProvider.findById(this.navParams.data.id)
           .then((result: any) => {
             this.contato = result;
           })
@@ -24,7 +24,7 @@ export class ContatosEditPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContatosEditPage');
+    console.log('ionViewDidLoad ContatosEditPage') ;
   }
 
   save() {
